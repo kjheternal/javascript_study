@@ -1,0 +1,9 @@
+* {
+    background-color: pink;
+}
+
+.rpc_txtarea {
+    width: 20%;
+    height: 6.5em;
+    resize: none;
+}
