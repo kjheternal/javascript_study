@@ -40,7 +40,8 @@ function rpcConfirmButtonClick() {
 
     // 잘못된 값 입력 ( 예외 처리 )
     if ( !checkValue ) {
-        return dw("잘못된 값을 입력해 게임이 취소됨!");
+        // return dw("잘못된 값을 입력해 게임이 취소됨!");
+        return location.reload(true); // 강제 새로고침
     }
 
     // 컴퓨터 가위 바위 보 값 고르는 중...
