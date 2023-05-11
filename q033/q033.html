@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" a href="q033.css">
+    <script src="common.js"></script>
+    <script src="q033.js"></script>
+</head>
+<body>
+
+    <input id = "rpc_text_area" type = "text" placeholder= "가위, 바위, 보를 입력하세요">
+    <input id = "rpc_confirm_button" type = "button" value = "확인" onclick = "rpcConfirmButtonClick();">
+    <hr>
+    <textarea class = "rpc_txtarea" id = "rpc_resultscreen" placeholder="가위 바위 보 결과 창" readonly></textarea>
+
+    <!-- 결과 화면(이미지) -->
+    <div id="screen">
+        <div id="rpc_user"></div>
+        <div id="rpc_vs"></div>
+        <div id="rpc_com"></div>
+    </div>
+
+</body>
+</html>

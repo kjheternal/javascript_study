@@ -1,0 +1,39 @@
+* {
+    background-color: pink;
+}
+
+#screen {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1fr 1fr 1fr;
+    height: 400px;
+}
+
+.rpc_txtarea {
+    background-color: rgba(5, 248, 155, 0.712);
+    width: 100%;
+    height: 6.5em;
+    resize: none;
+}
+
+#rpc_user{
+    width: 0px;
+}
+
+#rpc_vs {
+    background-image: url("vs.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    width: 100px;
+    height: 208px;
+    position: absolute;
+    bottom: 300px;
+    left: 320px;
+}
+
+#rpc_com{
+    width: 0px;
+    position: absolute;
+    left: 450px;
+}
