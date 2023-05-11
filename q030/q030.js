@@ -30,7 +30,7 @@ window.onload = function() {
 
     function startRPC() {
         if ( !checkValue ) {
-            return document.write("잘못된 값을 입력해 게임이 취소됨!");
+            return dw("잘못된 값을 입력해 게임이 취소됨!");
         }
 
         var computer = Math.floor( Math.random() * 3 ) + 1;
@@ -38,17 +38,17 @@ window.onload = function() {
         if ( computer == 1 ) {
             comValue = "가위";
 
-            document.write("컴퓨터가 가위를 냈습니다.");
+            dw("컴퓨터가 가위를 냈습니다.");
             br();
         } else if ( computer == 2 ) {
             comValue = "바위";
 
-            document.write("컴퓨터가 바위를 냈습니다.");
+            dw("컴퓨터가 바위를 냈습니다.");
             br();
         } else if ( computer == 3 ) {
             comValue = "보";
 
-            document.write("컴퓨터가 보를 냈습니다.");
+            dw("컴퓨터가 보를 냈습니다.");
             br();
         }
     }
@@ -59,27 +59,27 @@ window.onload = function() {
         }
 
         if ( player == "가위" && comValue == "가위" ) {
-            document.write("결과 : 비겼습니다.");
+            dw("결과 : 비겼습니다.");
         } else if ( player == "가위" && comValue == "바위" ) {
-            document.write("결과 : 졌습니다.");
+            dw("결과 : 졌습니다.");
         } else if ( player == "가위" && comValue == "보" ) {
-            document.write("결과 : 이겼습니다.");
+            dw("결과 : 이겼습니다.");
         }
 
         if ( player == "바위" && comValue == "가위" ) {
-            document.write("결과 : 이겼습니다.");
+            dw("결과 : 이겼습니다.");
         } else if ( player == "바위" && comValue == "바위" ) {
-            document.write("결과 : 비겼습니다.");
+            dw("결과 : 비겼습니다.");
         } else if ( player == "바위" && comValue == "보" ) {
-            document.write("결과 : 졌습니다.");
+            dw("결과 : 졌습니다.");
         }
 
         if ( player == "보" && comValue == "가위" ) {
-            document.write("결과 : 졌습니다.");
+            dw("결과 : 졌습니다.");
         } else if ( player == "보" && comValue == "바위" ) {
-            document.write("결과 : 이겼습니다.");
+            dw("결과 : 이겼습니다.");
         } else if ( player == "보" && comValue == "보" ) {
-            document.write("결과 : 비겼습니다.");
+            dw("결과 : 비겼습니다.");
         }
 
     }
